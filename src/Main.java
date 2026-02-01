@@ -1,8 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world");
-        System.out.print("Day 1\n");
-        System.out.print("sout \n");
+        int age = 24;
+        int grade = 12;
+        int year = 2026;
+        double gpa = 3.2;
+        double price = 99.99;
+        char currency = '$';
+        boolean flag = true;
+        String name = "Nguyen Huy Thanh";
+
     }
 }
 /* println thiết kế theo kiểu Overloading(nạp chồng phương thức)
