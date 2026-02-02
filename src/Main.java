@@ -1,15 +1,28 @@
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        int age = 24;
-        int grade = 12;
-        int year = 2026;
-        double gpa = 3.2;
-        double price = 99.99;
-        char currency = '$';
-        boolean flag = true;
-        String name = "Nguyen Huy Thanh";
+       Scanner scanner = new Scanner(System.in);
 
+        System.out.print("Enter ur grade: ");
+        int grade = scanner.nextInt();
+        scanner.nextLine();
+
+        System.out.print("Enter ur name: ");
+        String name = scanner.nextLine();
+
+        System.out.print("Enter ur gpa: ");
+        double gpa = scanner.nextDouble();
+
+        System.out.print("Are u a student: ");
+        boolean isStudent = scanner.nextBoolean();
+
+        System.out.println("Hello " + name);
+        System.out.println("Your grade is " + grade);
+        System.out.println("Your gpa is " + gpa);
+        if(isStudent) System.out.println("You are a enroll as a student");
+        else{
+            System.out.println("You are not enroll");
+        }
+       scanner.close();
     }
 }
-/* println thiết kế theo kiểu Overloading(nạp chồng phương thức)
- vd println(int x) khi bỏ vào biến x vào print java sẽ tự động tìm phương thức phù hợp */
