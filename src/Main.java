@@ -1,16 +1,9 @@
-import java.util.Scanner;
+import java.util.Random;
 public class Main{
     public static void main(String[] args){
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter your age: ");
-        int age = scanner.nextInt();
-        if (age >=18){
-            System.out.println("U are an adult");
-        }else if(age < 0 ){
-            System.out.println("U haven't been born yet!");
-        }
-        else{
-            System.out.println("U are a child!");
-        }
+         Random random = new Random();
+         int number;
+         number = random.nextInt();
+         System.out.println(number);
     }
 }
