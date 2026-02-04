@@ -1,18 +1,9 @@
-import java.util.Scanner;
-public class Main {
-    public static void main(String[] args) {
-       Scanner scanner = new Scanner(System.in);
-       double width = 0;
-       double height = 0 ;
-       double area = 0;
-
-        System.out.print("Enter width: ");
-        width = scanner.nextDouble();
-        System.out.print("Enter height: ");
-        height = scanner.nextDouble();
-        area = width * height;
-        System.out.println("The area is " + area + "cm²");
-
-       scanner.close();
+import java.util.Random;
+public class Main{
+    public static void main(String[] args){
+         Random random = new Random();
+         int number;
+         number = random.nextInt();
+         System.out.println(number);
     }
 }
