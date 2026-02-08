@@ -2,34 +2,21 @@
 
 public class Main{
     public static void main(String[] args){
-        String name = "      Huy Thanh    ";
-        int length = name.length();
-        char letter  = name.charAt(0);
-        int index = name.indexOf("u");
-        int lastIndex = name.lastIndexOf("h");
-        name = name.toUpperCase();
-        name = name.toLowerCase();
-        name = name.trim(); // xoá khoảng cách
-        name = name.replace("h","k");
-        System.out.println(name);
-
-        if(name.isEmpty()){ // kiểm tra chuỗi rỗng hay 0
-            System.out.println("");
-        }else{
-            System.out.println("");
+      String day = "Sunday";
+//      switch (day){
+//          case "Monday" -> System.out.println("It is a weekday 🥲");
+//          case "Tuesday" -> System.out.println("It is a weekday 🥲");
+//          case "Wednesday" -> System.out.println("It is a weekday 🥲");
+//          case "Thursday" -> System.out.println("It is a weekday 🥲");
+//          case "Friday" -> System.out.println("It is a weekday 🥲");
+//          case "Saturday" -> System.out.println("It is a weekend 😊");
+//          case "Sunday" -> System.out.println("It is a weekend 😊");
+//          default -> System.out.println(day+" is not a day");
+//      }
+        switch (day){
+            case "Monday", "Tuesday", "Wednesday","Thursday", "Friday" -> System.out.println("It is a weekday");
+            case "Saturday", "Sunday" -> System.out.println("It is a weekend");
+            default -> System.out.println(day + " is not a day");
         }
-
-        if(name.contains(" ")){ // kiểm tra chuỗi có chứa ký tự này 0
-            System.out.println("");
-        }else{
-            System.out.println("");
-        }
-
-        if(name.equals(" ")){ // so sánh chuỗi
-            System.out.println("");
-        }else{
-            System.out.println("");
-        }
-
     }
 }
