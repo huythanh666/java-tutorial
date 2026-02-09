@@ -1,21 +1,19 @@
-import java.util.Scanner;
 
 public class Main{
     public static void main(String[] args) throws InterruptedException {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter the length of the rows: ");
-        int rows = scanner.nextInt();
-        System.out.print("Enter the length of the columns: ");
-        int columns = scanner.nextInt();
-        System.out.print("Enter the symbol: ");
-        char symbol = scanner.next().charAt(0);
-
-        for(int i = 0; i < rows ; i++){
-            for(int j = 0 ; j < columns ; j++){
-                System.out.print(symbol);
-            }
-            System.out.println();
-        }
+        double result = 0;
+        result = cube(5);
+        System.out.println(result);
+    }
+    static void happyBirthday(){}
+    static String getFullname(String firstName, String lastName){
+        return firstName + " " + lastName;
+    }
+    static int square(int width){
+        return width * width;
+    }
+    static double cube(double number){
+        return number * number * number;
     }
 
 }
