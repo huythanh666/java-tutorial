@@ -1,22 +1,15 @@
-
+import java.util.Scanner;
 
 public class Main{
-    public static void main(String[] args){
-      String day = "Sunday";
-//      switch (day){
-//          case "Monday" -> System.out.println("It is a weekday 🥲");
-//          case "Tuesday" -> System.out.println("It is a weekday 🥲");
-//          case "Wednesday" -> System.out.println("It is a weekday 🥲");
-//          case "Thursday" -> System.out.println("It is a weekday 🥲");
-//          case "Friday" -> System.out.println("It is a weekday 🥲");
-//          case "Saturday" -> System.out.println("It is a weekend 😊");
-//          case "Sunday" -> System.out.println("It is a weekend 😊");
-//          default -> System.out.println(day+" is not a day");
-//      }
-        switch (day){
-            case "Monday", "Tuesday", "Wednesday","Thursday", "Friday" -> System.out.println("It is a weekday");
-            case "Saturday", "Sunday" -> System.out.println("It is a weekend");
-            default -> System.out.println(day + " is not a day");
+    public static void main(String[] args) throws InterruptedException {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("How many second to countdown from: ");
+        int start = scanner.nextInt();
+        for(int i = start; i > 0; i--){
+            System.out.println(i);
+            Thread.sleep(1000);
         }
+        System.out.println("Happy new year!!!");
     }
+
 }
