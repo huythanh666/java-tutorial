@@ -1,22 +1,21 @@
-
+import java.util.Scanner;
 
 public class Main{
-    public static void main(String[] args){
-      String day = "Sunday";
-//      switch (day){
-//          case "Monday" -> System.out.println("It is a weekday 🥲");
-//          case "Tuesday" -> System.out.println("It is a weekday 🥲");
-//          case "Wednesday" -> System.out.println("It is a weekday 🥲");
-//          case "Thursday" -> System.out.println("It is a weekday 🥲");
-//          case "Friday" -> System.out.println("It is a weekday 🥲");
-//          case "Saturday" -> System.out.println("It is a weekend 😊");
-//          case "Sunday" -> System.out.println("It is a weekend 😊");
-//          default -> System.out.println(day+" is not a day");
-//      }
-        switch (day){
-            case "Monday", "Tuesday", "Wednesday","Thursday", "Friday" -> System.out.println("It is a weekday");
-            case "Saturday", "Sunday" -> System.out.println("It is a weekend");
-            default -> System.out.println(day + " is not a day");
+    public static void main(String[] args) throws InterruptedException {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the length of the rows: ");
+        int rows = scanner.nextInt();
+        System.out.print("Enter the length of the columns: ");
+        int columns = scanner.nextInt();
+        System.out.print("Enter the symbol: ");
+        char symbol = scanner.next().charAt(0);
+
+        for(int i = 0; i < rows ; i++){
+            for(int j = 0 ; j < columns ; j++){
+                System.out.print(symbol);
+            }
+            System.out.println();
         }
     }
+
 }
