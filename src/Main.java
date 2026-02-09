@@ -3,13 +3,19 @@ import java.util.Scanner;
 public class Main{
     public static void main(String[] args) throws InterruptedException {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("How many second to countdown from: ");
-        int start = scanner.nextInt();
-        for(int i = start; i > 0; i--){
-            System.out.println(i);
-            Thread.sleep(1000);
+        System.out.print("Enter the length of the rows: ");
+        int rows = scanner.nextInt();
+        System.out.print("Enter the length of the columns: ");
+        int columns = scanner.nextInt();
+        System.out.print("Enter the symbol: ");
+        char symbol = scanner.next().charAt(0);
+
+        for(int i = 0; i < rows ; i++){
+            for(int j = 0 ; j < columns ; j++){
+                System.out.print(symbol);
+            }
+            System.out.println();
         }
-        System.out.println("Happy new year!!!");
     }
 
 }
